@@ -1,0 +1,241 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 10
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:DB9_Male_MountingHoles JS?
+U 1 1 6026036E
+P 5100 4200
+AR Path="/6026036E" Ref="JS?"  Part="1" 
+AR Path="/60256EEC/6026036E" Ref="JS?"  Part="1" 
+AR Path="/60412AB0/603EE318/6026036E" Ref="JS1"  Part="1" 
+AR Path="/604164BB/603EE318/6026036E" Ref="JS2"  Part="1" 
+F 0 "JS1" H 5280 4202 50  0000 L CNN
+F 1 "DB9_Male_MountingHoles" H 5280 4111 50  0000 L CNN
+F 2 "Connector_Dsub:DSUB-9_Male_Horizontal_P2.77x2.84mm_EdgePinOffset4.94mm_Housed_MountingHolesOffset7.48mm" H 5100 4200 50  0001 C CNN
+F 3 " ~" H 5100 4200 50  0001 C CNN
+	1    5100 4200
+	0    1    1    0   
+$EndComp
+Text HLabel 4550 3800 0    50   Input ~ 0
+UP
+Text HLabel 4550 3700 0    50   Input ~ 0
+DOWN
+Text HLabel 4550 3600 0    50   Input ~ 0
+LEFT
+Text HLabel 4550 3500 0    50   Input ~ 0
+RIGHT
+Text HLabel 4550 3400 0    50   Input ~ 0
+BUTTON1
+Text HLabel 4550 3300 0    50   Input ~ 0
+BUTTON2
+Wire Wire Line
+	4550 3800 4700 3800
+Wire Wire Line
+	4700 3800 4700 3900
+Wire Wire Line
+	4550 3700 4900 3700
+Wire Wire Line
+	4900 3700 4900 3900
+Wire Wire Line
+	4550 3600 5100 3600
+Wire Wire Line
+	5100 3600 5100 3900
+Wire Wire Line
+	4550 3500 5300 3500
+Wire Wire Line
+	5300 3500 5300 3900
+Wire Wire Line
+	4550 3400 4800 3400
+Wire Wire Line
+	4800 3400 4800 3900
+Wire Wire Line
+	4550 3300 5000 3300
+Wire Wire Line
+	5000 3300 5000 3900
+Text HLabel 4550 3200 0    50   Input ~ 0
+SWITCH_COMMON
+Wire Wire Line
+	4550 3200 5200 3200
+Wire Wire Line
+	5200 3200 5200 3900
+Text HLabel 5700 3650 2    50   Input ~ 0
+GND
+Wire Wire Line
+	5700 3650 5400 3650
+Wire Wire Line
+	5400 3650 5400 3900
+Text HLabel 5700 3750 2    50   Input ~ 0
+5V
+Wire Wire Line
+	5700 3750 5500 3750
+Wire Wire Line
+	5500 3750 5500 3900
+Text HLabel 4350 4200 0    50   Input ~ 0
+CASE_GND
+Wire Wire Line
+	4500 4200 4350 4200
+Text HLabel 6400 4250 0    50   Input ~ 0
+GND
+Text HLabel 6400 4350 0    50   Input ~ 0
+CASE_GND
+Text HLabel 6400 4450 0    50   Input ~ 0
+SWITCH_COMMON
+Wire Wire Line
+	6400 4250 6600 4250
+Wire Wire Line
+	6600 4250 6600 4350
+Wire Wire Line
+	6600 4450 6400 4450
+Wire Wire Line
+	6400 4350 6600 4350
+Connection ~ 6600 4350
+Wire Wire Line
+	6600 4350 6600 4450
+Text HLabel 6600 5250 0    50   Input ~ 0
+UP
+Text HLabel 6600 5150 0    50   Input ~ 0
+DOWN
+Text HLabel 6600 5050 0    50   Input ~ 0
+LEFT
+Text HLabel 6600 4950 0    50   Input ~ 0
+RIGHT
+Text HLabel 6600 4850 0    50   Input ~ 0
+BUTTON1
+Text HLabel 6600 4750 0    50   Input ~ 0
+BUTTON2
+$Comp
+L Device:R_Small_US R1
+U 1 1 6026C6E1
+P 6900 4750
+AR Path="/60412AB0/603EE318/6026C6E1" Ref="R1"  Part="1" 
+AR Path="/604164BB/603EE318/6026C6E1" Ref="R7"  Part="1" 
+F 0 "R1" V 6695 4750 50  0000 C CNN
+F 1 "10K" V 6786 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 4750 50  0001 C CNN
+F 3 "~" H 6900 4750 50  0001 C CNN
+	1    6900 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R3
+U 1 1 6026E5CC
+P 7100 4850
+AR Path="/60412AB0/603EE318/6026E5CC" Ref="R3"  Part="1" 
+AR Path="/604164BB/603EE318/6026E5CC" Ref="R9"  Part="1" 
+F 0 "R3" V 6895 4850 50  0000 C CNN
+F 1 "10K" V 6986 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 4850 50  0001 C CNN
+F 3 "~" H 7100 4850 50  0001 C CNN
+	1    7100 4850
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R5
+U 1 1 6026EE10
+P 7300 4950
+AR Path="/60412AB0/603EE318/6026EE10" Ref="R5"  Part="1" 
+AR Path="/604164BB/603EE318/6026EE10" Ref="R11"  Part="1" 
+F 0 "R5" V 7095 4950 50  0000 C CNN
+F 1 "10K" V 7186 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7300 4950 50  0001 C CNN
+F 3 "~" H 7300 4950 50  0001 C CNN
+	1    7300 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R6
+U 1 1 6026F682
+P 7550 5050
+AR Path="/60412AB0/603EE318/6026F682" Ref="R6"  Part="1" 
+AR Path="/604164BB/603EE318/6026F682" Ref="R12"  Part="1" 
+F 0 "R6" V 7345 5050 50  0000 C CNN
+F 1 "10K" V 7436 5050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7550 5050 50  0001 C CNN
+F 3 "~" H 7550 5050 50  0001 C CNN
+	1    7550 5050
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R2
+U 1 1 6026FBFD
+P 6900 5150
+AR Path="/60412AB0/603EE318/6026FBFD" Ref="R2"  Part="1" 
+AR Path="/604164BB/603EE318/6026FBFD" Ref="R8"  Part="1" 
+F 0 "R2" V 6695 5150 50  0000 C CNN
+F 1 "10K" V 6786 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 6900 5150 50  0001 C CNN
+F 3 "~" H 6900 5150 50  0001 C CNN
+	1    6900 5150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R_Small_US R4
+U 1 1 60270527
+P 7100 5250
+AR Path="/60412AB0/603EE318/60270527" Ref="R4"  Part="1" 
+AR Path="/604164BB/603EE318/60270527" Ref="R10"  Part="1" 
+F 0 "R4" V 6895 5250 50  0000 C CNN
+F 1 "10K" V 6986 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 7100 5250 50  0001 C CNN
+F 3 "~" H 7100 5250 50  0001 C CNN
+	1    7100 5250
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6600 4750 6800 4750
+Wire Wire Line
+	6600 4850 7000 4850
+Wire Wire Line
+	6600 5050 7450 5050
+Wire Wire Line
+	6600 4950 7200 4950
+Wire Wire Line
+	6600 5150 6800 5150
+Wire Wire Line
+	6600 5250 7000 5250
+Wire Wire Line
+	7000 4750 7950 4750
+Wire Wire Line
+	7950 5250 7200 5250
+Wire Wire Line
+	7000 5150 7950 5150
+Wire Wire Line
+	7950 4750 7950 4850
+Connection ~ 7950 5150
+Wire Wire Line
+	7650 5050 7950 5050
+Connection ~ 7950 5050
+Wire Wire Line
+	7950 5050 7950 5150
+Wire Wire Line
+	7400 4950 7950 4950
+Connection ~ 7950 4950
+Wire Wire Line
+	7950 4950 7950 5050
+Wire Wire Line
+	7200 4850 7950 4850
+Connection ~ 7950 4850
+Wire Wire Line
+	7950 4850 7950 4950
+Text HLabel 6600 5350 0    50   Input ~ 0
+PULL_UP
+Wire Wire Line
+	6600 5350 7950 5350
+Wire Wire Line
+	7950 5150 7950 5250
+Connection ~ 7950 5250
+Wire Wire Line
+	7950 5250 7950 5350
+$EndSCHEMATC
