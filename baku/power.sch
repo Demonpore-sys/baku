@@ -258,7 +258,7 @@ Text HLabel 2650 2150 0    50   Input ~ 0
 5V
 Wire Wire Line
 	2650 2150 2800 2150
-Text HLabel 4200 2400 2    50   Input ~ 0
+Text HLabel 4600 2450 2    50   Input ~ 0
 GNDA
 Wire Wire Line
 	4500 2450 4200 2450
@@ -303,4 +303,7 @@ Text HLabel 6600 1850 2    50   Input ~ 0
 GNDA
 Text HLabel 5700 2750 2    50   Input ~ 0
 -2V5
+Wire Wire Line
+	4500 2450 4600 2450
+Connection ~ 4500 2450
 $EndSCHEMATC

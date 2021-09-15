@@ -1240,8 +1240,6 @@ F 3 "" H 2450 3750 50  0001 C CNN
 $EndComp
 Text HLabel 10350 3800 2    50   BiDi ~ 0
 VDD3V3
-Entry Wire Line
-	10550 3850 10650 3950
 Text HLabel 6600 5450 2    50   BiDi ~ 0
 VDD3V3
 $Comp
@@ -1354,4 +1352,54 @@ Text HLabel 1000 3050 0    50   Input ~ 0
 SPI4_MISO
 Text HLabel 2950 2450 2    50   Input ~ 0
 SPI4_CS0
+Text HLabel 3950 6500 2    50   Input ~ 0
+ADC_SDI
+Text HLabel 3450 6600 0    50   Input ~ 0
+DAC_CS
+Text HLabel 3950 6600 2    50   Input ~ 0
+ADC_SCK
+Text HLabel 3450 6700 0    50   Input ~ 0
+DAC_CLK
+Text HLabel 3950 6700 2    50   Input ~ 0
+VDD3V3
+Text HLabel 3450 6300 0    50   Input ~ 0
+GND
+Text HLabel 3450 6400 0    50   Input ~ 0
+DAC_LDAC
+Text HLabel 3450 6500 0    50   Input ~ 0
+DAC_SDI
+$Comp
+L Connector_Generic:Conn_02x05_Odd_Even J4
+U 1 1 61480D4B
+P 3650 6500
+F 0 "J4" H 3700 6917 50  0000 C CNN
+F 1 "Conn_02x05_Odd_Even" H 3700 6826 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Vertical" H 3650 6500 50  0001 C CNN
+F 3 "~" H 3650 6500 50  0001 C CNN
+	1    3650 6500
+	1    0    0    -1  
+$EndComp
+Text HLabel 3950 6400 2    50   Input ~ 0
+-2V5
+Text HLabel 3950 6300 2    50   Input ~ 0
+2V5
+Text HLabel 2900 6700 0    50   Input ~ 0
+SPI1_SCLK
+Text HLabel 2900 6800 0    50   Input ~ 0
+SPI1_MISO
+$Comp
+L power:+3V3 #PWR?
+U 1 1 615CD05B
+P 8650 5600
+F 0 "#PWR?" H 8650 5450 50  0001 C CNN
+F 1 "+3V3" H 8665 5773 50  0000 C CNN
+F 2 "" H 8650 5600 50  0001 C CNN
+F 3 "" H 8650 5600 50  0001 C CNN
+	1    8650 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 5800 8650 5800
+Wire Wire Line
+	8650 5600 8650 5800
 $EndSCHEMATC
