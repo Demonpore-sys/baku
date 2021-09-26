@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 7 8
+Sheet 4 10
 Title ""
 Date ""
 Rev ""
@@ -285,8 +285,6 @@ Text HLabel 4400 2950 0    50   Input ~ 0
 SPI1_MOSI
 Text HLabel 4400 3050 0    50   Input ~ 0
 SPI1_SCLK
-Text HLabel 6800 1450 2    50   Input ~ 0
-IOREF
 Text HLabel 4400 1350 0    50   Input ~ 0
 DAC_LDAC
 Text HLabel 6800 1550 2    50   Input ~ 0
@@ -339,4 +337,6 @@ Text HLabel 4400 2850 0    50   Input ~ 0
 GPIO25
 Text HLabel 4400 3150 0    50   Input ~ 0
 GPIO28
+Text HLabel 6800 1450 2    50   Input ~ 0
+IOREF
 $EndSCHEMATC
