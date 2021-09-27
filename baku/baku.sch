@@ -1229,4 +1229,63 @@ Wire Wire Line
 	5300 3900 5450 3900
 Wire Wire Line
 	5300 4000 5450 4000
+$Comp
+L Mechanical:MountingHole_Pad H4
+U 1 1 63B98659
+P 9650 4200
+F 0 "H4" H 9750 4249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9750 4158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 9650 4200 50  0001 C CNN
+F 3 "~" H 9650 4200 50  0001 C CNN
+	1    9650 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H3
+U 1 1 63BAB619
+P 9400 4200
+F 0 "H3" H 9500 4249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9500 4158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 9400 4200 50  0001 C CNN
+F 3 "~" H 9400 4200 50  0001 C CNN
+	1    9400 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H2
+U 1 1 63BBD7D8
+P 9150 4200
+F 0 "H2" H 9250 4249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9250 4158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 9150 4200 50  0001 C CNN
+F 3 "~" H 9150 4200 50  0001 C CNN
+	1    9150 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole_Pad H1
+U 1 1 63BCFC0A
+P 8900 4200
+F 0 "H1" H 9000 4249 50  0000 L CNN
+F 1 "MountingHole_Pad" H 9000 4158 50  0000 L CNN
+F 2 "MountingHole:MountingHole_3mm_Pad_Via" H 8900 4200 50  0001 C CNN
+F 3 "~" H 8900 4200 50  0001 C CNN
+	1    8900 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 4300 9150 4300
+Wire Wire Line
+	9150 4300 9400 4300
+Connection ~ 9150 4300
+Wire Wire Line
+	9400 4300 9650 4300
+Connection ~ 9400 4300
+Text HLabel 9750 4450 2    50   Input ~ 0
+GND
+Wire Wire Line
+	9750 4450 9650 4450
+Wire Wire Line
+	9650 4450 9650 4300
+Connection ~ 9650 4300
 $EndSCHEMATC
