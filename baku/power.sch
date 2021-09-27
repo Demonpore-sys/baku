@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 5 10
+Sheet 2 10
 Title ""
 Date ""
 Rev ""
@@ -306,4 +306,44 @@ Text HLabel 5700 2750 2    50   Input ~ 0
 Wire Wire Line
 	4500 2450 4600 2450
 Connection ~ 4500 2450
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 63B929D3
+P 6400 2600
+AR Path="/601C7D47/63B929D3" Ref="J?"  Part="1" 
+AR Path="/63B929D3" Ref="J?"  Part="1" 
+AR Path="/6064483E/63B929D3" Ref="J3"  Part="1" 
+F 0 "J3" H 6318 2275 50  0000 C CNN
+F 1 "Conn_01x03" H 6318 2366 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6400 2600 50  0001 C CNN
+F 3 "~" H 6400 2600 50  0001 C CNN
+	1    6400 2600
+	-1   0    0    1   
+$EndComp
+Text HLabel 6600 2700 2    50   Input ~ 0
+2V5
+Text HLabel 6600 2500 2    50   Input ~ 0
+-2V5
+Text HLabel 6600 2600 2    50   Input ~ 0
+GNDA
+$Comp
+L Connector_Generic:Conn_01x03 J?
+U 1 1 63B94F73
+P 6400 3050
+AR Path="/601C7D47/63B94F73" Ref="J?"  Part="1" 
+AR Path="/63B94F73" Ref="J?"  Part="1" 
+AR Path="/6064483E/63B94F73" Ref="J4"  Part="1" 
+F 0 "J4" H 6318 2725 50  0000 C CNN
+F 1 "Conn_01x03" H 6318 2816 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 6400 3050 50  0001 C CNN
+F 3 "~" H 6400 3050 50  0001 C CNN
+	1    6400 3050
+	-1   0    0    1   
+$EndComp
+Text HLabel 6600 3150 2    50   Input ~ 0
+2V5
+Text HLabel 6600 2950 2    50   Input ~ 0
+-2V5
+Text HLabel 6600 3050 2    50   Input ~ 0
+GNDA
 $EndSCHEMATC

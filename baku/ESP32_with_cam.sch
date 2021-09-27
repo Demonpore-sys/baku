@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 8 10
+Sheet 10 10
 Title ""
 Date ""
 Rev ""
@@ -25,11 +25,9 @@ F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_
 	1    0    0    -1  
 $EndComp
 Text HLabel 2550 3700 2    50   Input ~ 0
-CSI_D0
+IO5
 Wire Wire Line
 	2550 3700 2400 3700
-Text HLabel 1050 3200 0    50   Input ~ 0
-RESET
 Wire Wire Line
 	1200 3200 1100 3200
 Text HLabel 1850 6000 2    50   Input ~ 0
@@ -67,8 +65,6 @@ Text HLabel 3800 1850 0    50   Input ~ 0
 3V3
 Text HLabel 3800 1750 0    50   Input ~ 0
 SD_CMD
-Text HLabel 3450 3250 2    50   Input ~ 0
-SD_MOSI
 Text HLabel 2550 4000 2    50   Input ~ 0
 SD_CLK
 Text HLabel 2550 3800 2    50   Input ~ 0
@@ -93,25 +89,6 @@ Wire Wire Line
 	3950 2150 3800 2150
 Wire Wire Line
 	3800 2250 3950 2250
-Text HLabel 6550 5000 2    50   Input ~ 0
-GND
-Text HLabel 6050 5000 0    50   Input ~ 0
-PWDN
-$Comp
-L Device:R_Small_US 10K1
-U 1 1 607EFF90
-P 6300 5000
-F 0 "10K1" V 6095 5000 50  0000 C CNN
-F 1 "R_Small_US" V 6186 5000 50  0000 C CNN
-F 2 "" H 6300 5000 50  0001 C CNN
-F 3 "~" H 6300 5000 50  0001 C CNN
-	1    6300 5000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6050 5000 6200 5000
-Wire Wire Line
-	6400 5000 6550 5000
 Wire Wire Line
 	1700 3000 1800 3000
 Wire Wire Line
@@ -121,9 +98,6 @@ Wire Wire Line
 Wire Wire Line
 	1100 2650 1100 3200
 Connection ~ 1800 3000
-Connection ~ 1100 3200
-Wire Wire Line
-	1100 3200 1050 3200
 Wire Wire Line
 	2550 3800 2400 3800
 Text HLabel 2550 3900 2    50   Input ~ 0
@@ -150,7 +124,7 @@ U 1 1 6153287D
 P 2650 3200
 F 0 "10K2" V 2445 3200 50  0000 C CNN
 F 1 "R_Small_US" V 2536 3200 50  0000 C CNN
-F 2 "" H 2650 3200 50  0001 C CNN
+F 2 "Resistor_SMD:R_0805_2012Metric" H 2650 3200 50  0001 C CNN
 F 3 "~" H 2650 3200 50  0001 C CNN
 	1    2650 3200
 	0    1    1    0   
@@ -161,4 +135,78 @@ Wire Wire Line
 	2750 3200 2900 3200
 Text HLabel 2900 3200 2    50   Input ~ 0
 3V3
+Text HLabel 2550 3500 2    50   Input ~ 0
+IO3_RXD0
+Wire Wire Line
+	2400 3500 2550 3500
+Text HLabel 2550 3300 2    50   Input ~ 0
+IO1_TXD0
+Wire Wire Line
+	2400 3300 2550 3300
+Text HLabel 2550 4200 2    50   Input ~ 0
+IO16
+Text HLabel 2550 4300 2    50   Input ~ 0
+IO17
+Text HLabel 2550 4400 2    50   Input ~ 0
+IO18
+Text HLabel 2550 4700 2    50   Input ~ 0
+IO22
+Text HLabel 2550 4800 2    50   Input ~ 0
+IO23
+Text HLabel 2550 4900 2    50   Input ~ 0
+IO25
+Text HLabel 2550 5000 2    50   Input ~ 0
+IO26
+Text HLabel 2550 5100 2    50   Input ~ 0
+IO27
+Text HLabel 2550 5200 2    50   Input ~ 0
+IO32
+Text HLabel 2550 5300 2    50   Input ~ 0
+IO33
+Text HLabel 2550 5400 2    50   Input ~ 0
+I34
+Text HLabel 2550 5500 2    50   Input ~ 0
+I35
+Text HLabel 2550 4500 2    50   Input ~ 0
+IO19
+Text HLabel 2550 4600 2    50   Input ~ 0
+IO21
+Wire Wire Line
+	2550 4500 2400 4500
+Wire Wire Line
+	2550 4600 2400 4600
+Wire Wire Line
+	2400 4700 2550 4700
+Wire Wire Line
+	2550 4900 2400 4900
+Wire Wire Line
+	2400 4800 2550 4800
+Wire Wire Line
+	2550 4200 2400 4200
+Wire Wire Line
+	2400 4400 2550 4400
+Wire Wire Line
+	2400 4300 2550 4300
+Wire Wire Line
+	2550 5400 2400 5400
+Wire Wire Line
+	2550 5500 2400 5500
+Wire Wire Line
+	2550 5100 2400 5100
+Wire Wire Line
+	2400 5300 2550 5300
+Wire Wire Line
+	2400 5200 2550 5200
+Wire Wire Line
+	2400 5000 2550 5000
+Text HLabel 1100 3400 0    50   Input ~ 0
+IO36_SENSOR_VP
+Text HLabel 1100 3500 0    50   Input ~ 0
+IO39_SENSOR_VN
+Wire Wire Line
+	1250 3500 1100 3500
+Wire Wire Line
+	1100 3400 1250 3400
+Text Notes 750  4700 0    50   ~ 0
+Connected\nto\nSPI Flash
 $EndSCHEMATC

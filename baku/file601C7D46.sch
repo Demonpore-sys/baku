@@ -18,35 +18,7 @@ USB_D+
 Text HLabel 4400 3750 0    50   Input ~ 0
 USB_D-
 Wire Wire Line
-	7150 1250 7150 1150
-Wire Wire Line
-	6700 1250 7150 1250
-$Comp
-L power:+5V #PWR028
-U 1 1 606AB494
-P 7150 1150
-F 0 "#PWR028" H 7150 1000 50  0001 C CNN
-F 1 "+5V" H 7165 1323 50  0000 C CNN
-F 2 "" H 7150 1150 50  0001 C CNN
-F 3 "" H 7150 1150 50  0001 C CNN
-	1    7150 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6700 3800 6800 3800
-Wire Wire Line
-	6700 3900 7150 3900
-$Comp
-L power:GND #PWR031
-U 1 1 606A08EC
-P 7150 3900
-F 0 "#PWR031" H 7150 3650 50  0001 C CNN
-F 1 "GND" H 7155 3727 50  0000 C CNN
-F 2 "" H 7150 3900 50  0001 C CNN
-F 3 "" H 7150 3900 50  0001 C CNN
-	1    7150 3900
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6700 4000 6800 4000
 Wire Wire Line
@@ -80,19 +52,6 @@ Wire Wire Line
 Wire Wire Line
 	6700 2750 6800 2750
 Wire Wire Line
-	6700 2650 7150 2650
-$Comp
-L power:GND #PWR030
-U 1 1 6068DD17
-P 7150 2650
-F 0 "#PWR030" H 7150 2400 50  0001 C CNN
-F 1 "GND" H 7155 2477 50  0000 C CNN
-F 2 "" H 7150 2650 50  0001 C CNN
-F 3 "" H 7150 2650 50  0001 C CNN
-	1    7150 2650
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	6800 2550 6700 2550
 Wire Wire Line
 	6800 2450 6700 2450
@@ -113,22 +72,9 @@ Wire Wire Line
 Wire Wire Line
 	6800 1650 6700 1650
 Wire Wire Line
-	6700 1350 7150 1350
-Wire Wire Line
 	6800 1550 6700 1550
 Wire Wire Line
 	6800 1450 6700 1450
-$Comp
-L power:GND #PWR029
-U 1 1 60680684
-P 7150 1350
-F 0 "#PWR029" H 7150 1100 50  0001 C CNN
-F 1 "GND" H 7155 1177 50  0000 C CNN
-F 2 "" H 7150 1350 50  0001 C CNN
-F 3 "" H 7150 1350 50  0001 C CNN
-	1    7150 1350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	4500 3550 4400 3550
 Wire Wire Line
@@ -173,8 +119,6 @@ Wire Wire Line
 	4500 1450 4400 1450
 Wire Wire Line
 	4500 1350 4400 1350
-Wire Wire Line
-	3750 1250 4500 1250
 Text GLabel 4400 3550 0    50   Input ~ 0
 32
 Text GLabel 4400 3450 0    50   Input ~ 0
@@ -183,17 +127,6 @@ Text GLabel 4400 3350 0    50   Input ~ 0
 30
 Text GLabel 4400 3250 0    50   Input ~ 0
 O1
-$Comp
-L power:GND #PWR026
-U 1 1 606758B1
-P 3750 1250
-F 0 "#PWR026" H 3750 1000 50  0001 C CNN
-F 1 "GND" H 3755 1077 50  0000 C CNN
-F 2 "" H 3750 1250 50  0001 C CNN
-F 3 "" H 3750 1250 50  0001 C CNN
-	1    3750 1250
-	1    0    0    -1  
-$EndComp
 $Comp
 L teensy:Teensy4.1 U5
 U 1 1 6067118F
@@ -339,4 +272,24 @@ Text HLabel 4400 3150 0    50   Input ~ 0
 GPIO28
 Text HLabel 6800 1450 2    50   Input ~ 0
 IOREF
+Text HLabel 6800 1350 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6700 1350 6800 1350
+Text HLabel 6800 1250 2    50   Input ~ 0
+VIN_5V
+Wire Wire Line
+	6800 1250 6700 1250
+Text HLabel 6800 2650 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6700 2650 6800 2650
+Text HLabel 6800 3900 2    50   Input ~ 0
+GND
+Wire Wire Line
+	6700 3900 6800 3900
+Text HLabel 4400 1250 0    50   Input ~ 0
+GND
+Wire Wire Line
+	4400 1250 4500 1250
 $EndSCHEMATC
