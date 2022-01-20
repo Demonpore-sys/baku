@@ -3,3 +3,11 @@ Problems with REV 0.1
 C1 is a throughole, and ... should probably be surface mount (Fixed)
 Ethernet was completely wrong. (Fixed)
 
+The pinout for the DAC and ADC is totally wrong (maybe fixed)
+
+Needs alternative regulators since the parts specd are chip-shortage
+unobtainable right now.  (-2.5V and 2.5V regulators and REF2020)
+
+The combined 10 pin plug probably has to be 12, and needs the REF2020
+Check everywhere to make sure 3.3V and REF is right
+

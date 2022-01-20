@@ -38,7 +38,7 @@ AR Path="/62829CBF" Ref="J?"  Part="1"
 AR Path="/62827159/62829CBF" Ref="J6"  Part="1" 
 F 0 "J6" H 5650 3367 50  0000 C CNN
 F 1 "Conn_02x05_Odd_Even" H 5650 3276 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_2x05_P2.54mm_Horizontal" H 5600 2950 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Horizontal" H 5600 2950 50  0001 C CNN
 F 3 "~" H 5600 2950 50  0001 C CNN
 	1    5600 2950
 	1    0    0    -1  
